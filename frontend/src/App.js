@@ -15,9 +15,13 @@ function App() {
   const [checkoutDetails, setCheckoutDetails] = useState(null);
 
   useEffect(() => {
-    loadProducts();
-    loadCart();
+    const init = async () => {
+      await loadProducts();
+      await loadCart();
+    };
+    init();
   }, []);
+
 
   const loadProducts = async () => {
     const res = await getProducts();
