@@ -54,7 +54,7 @@ function App() {
         {products.map((p) => (
           <div key={p.id} className="card">
             <h3>{p.name}</h3>
-            <p>₹{p.price}</p>
+            <p>${p.price}</p>
             <button onClick={() => handleAddToCart(p.id)}>Add to Cart</button>
           </div>
         ))}
@@ -81,7 +81,7 @@ function App() {
                   <td>{item.name}</td>
                   <td>{item.qty}</td>
                   <td>₹{item.price}</td>
-                  <td>₹{item.subtotal}</td>
+                  <td>₹{item.subtotal.toFixed(2)}</td>
                   <td>
                     <button onClick={() => handleRemove(item.id)}>❌</button>
                   </td>
@@ -90,7 +90,7 @@ function App() {
             </tbody>
           </table>
 
-          <h3 className="total">Total: ₹{total}</h3>
+          <h3 className="total">Total: ${total.toFixed(2)}</h3>
           <button className="checkout-btn" onClick={handleCheckout}>
             Checkout
           </button>
@@ -101,7 +101,7 @@ function App() {
         <div className="receipt">
           <h3>✅ Order Successful!</h3>
           <p>Order ID: {checkoutDetails.orderId}</p>
-          <p>Total: ₹{checkoutDetails.total}</p>
+          <p>Total: ${checkoutDetails.total}</p>
           <p>Time: {new Date(checkoutDetails.timestamp).toLocaleString()}</p>
         </div>
       )}

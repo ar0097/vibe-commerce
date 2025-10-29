@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URL = "http://localhost:5000";
+export const API_BASE_URL = "https://vibe-commerce-p6kf.onrender.com";
 
 export const getProducts = () => axios.get(`${API_BASE_URL}/api/products`);
 
