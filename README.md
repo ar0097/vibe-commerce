@@ -58,7 +58,7 @@ Local server URL: http://localhost:5000
 git clone https://github.com/ar0097/vibe-commerce.git
 cd frontend
 npm install
-node start
+npm start
 ```
 
 
