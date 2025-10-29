@@ -35,7 +35,7 @@ Allows adding/removing products, viewing cart totals, and performing a mock chec
 1. Clone the repo and navigate to backend folder:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ar0097/vibe-commerce.git
 cd backend
 npm install
 node server.js
