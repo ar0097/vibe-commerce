@@ -101,7 +101,7 @@ function App() {
         <div className="receipt">
           <h3>✅ Order Successful!</h3>
           <p>Order ID: {checkoutDetails.orderId}</p>
-          <p>Total: ${checkoutDetails.total}</p>
+          <p>Total: ${checkoutDetails.total.toFixed(2)}</p>
           <p>Time: {new Date(checkoutDetails.timestamp).toLocaleString()}</p>
         </div>
       )}
