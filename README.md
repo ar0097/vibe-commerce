@@ -51,11 +51,11 @@ POST   /api/checkout  { "cartItems": [...] }
 Local server URL: http://localhost:5000
 
 
-### 2️⃣ Backend
+### 2️⃣ Frontend
 1. Clone the repo and navigate to backend folder:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ar0097/vibe-commerce.git
 cd frontend
 npm install
 node start
