@@ -5,7 +5,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/assets", express.static("assets"));
 
 
 let products = [
@@ -13,42 +12,36 @@ let products = [
         id: '1',
         name: 'Wireless Headphones',
         price: 129.99,
-        image: '/assets/product-headphones-CFbM6jig.jpg',
         description: 'Premium noise-cancelling wireless headphones with 30-hour battery life',
     },
     {
         id: '2',
         name: 'Smart Watch',
         price: 299.99,
-        image: "/assets/product-watch-DJ-jnBQY.jpg",
         description: 'Advanced fitness tracking and notifications on your wrist',
     },
     {
         id: '3',
         name: 'Leather Backpack',
         price: 89.99,
-        image: '/assets/product-backpack-CMcJ20Ew.jpg',
         description: 'Durable leather backpack with laptop compartment',
     },
     {
         id: '4',
         name: 'Bluetooth Speaker',
         price: 79.99,
-        image: '/assets/product-speaker-C0nzViSb.jpg',
         description: 'Portable waterproof speaker with 360° sound',
     },
     {
         id: '5',
         name: 'Designer Sunglasses',
         price: 159.99,
-        image: '/assets/product-sunglasses-BvoY38mg.jpg',
         description: 'UV protection polarized sunglasses with premium frame',
     },
     {
         id: '6',
         name: 'Premium Phone Case',
         price: 39.99,
-        image: '/assets/product-phone-case-Dd3Nbyic.jpg',
         description: 'Military-grade protection with sleek design',
     },
 ];
